@@ -1,14 +1,13 @@
 import os
 
-from sanic import Sanic
-from sanic.response import json
+from sanic import Sanic, response
 
 app = Sanic()
 
 
 @app.route("/")
 async def space(request):
-    return "The space has grown 10% last year"
+    response.text("The space has grown 10% last year")
 
 
 if __name__ == "__main__":
