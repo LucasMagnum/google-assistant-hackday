@@ -36,9 +36,9 @@ def top_companies(parameters):
                   "expectUserResponse": True,
                   "richResponse": {
                     "items": [
-                        {"simpleResponse": {"displayText": "Test 1"}}
-                        {"simpleResponse": {"displayText": "Test 2"}}
-                        {"simpleResponse": {"displayText": "Test 3"}}
+                        {"simpleResponse": {"displayText": "Test 1"}},
+                        {"simpleResponse": {"displayText": "Test 2"}},
+                        {"simpleResponse": {"displayText": "Test 3"}},
                         {"simpleResponse": {"displayText": "Test 4"}}
                     ]
                   },
