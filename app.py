@@ -33,7 +33,7 @@ def top_companies(parameters):
         return{
           "payload": {
             "google": {
-              "expectUserResponse": true,
+              "expectUserResponse": True,
               "richResponse": {
                 "items": [
                   {
@@ -44,18 +44,8 @@ def top_companies(parameters):
                   }
                 ]
               },
-              "userStorage": "{\"data\":{}}"
             }
           },
-          "outputContexts": [
-            {
-              "name": "/contexts/_actions_on_google",
-              "lifespanCount": 99,
-              "parameters": {
-                "data": "{}"
-              }
-            }
-          ]
         }
 
     if operator.lower() == "revenue":
