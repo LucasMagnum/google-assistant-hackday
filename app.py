@@ -19,14 +19,15 @@ async def handler(request):
     handler = handlers.get(action_type)
 
     if handler:
-        return response.json(handler(request.json["queryResult"]["parameters"]))
+        return response.json(handler(request.json["queryResult"]))
 
     return response.json({
         "fulfillmentText": "Sorry we are unable to process with your request"
     })
 
 
-def top_companies(parameters):
+def top_companies(query):
+    parameters = query["parameters"]
     operator = parameters["operator"]
 
     text = "Here it is the top companies in regards to %s" % operator
@@ -76,7 +77,7 @@ def top_companies(parameters):
           "dividerAfter": True
         } for item in operating_revenue]
 
-    elif parameters["queryText"].lower() == "top growing":
+    elif query["queryText"].lower() == "top growing":
         text = "Here it is the top growing categories"
 
         columns = [
