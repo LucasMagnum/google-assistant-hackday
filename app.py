@@ -1,13 +1,16 @@
+import logging
 import os
 
 from sanic import Sanic, response
 
 app = Sanic()
 
+logger = logging.getLogger(__name__)
+
 
 @app.route("/")
 async def space(request):
-    response.text("The space has grown 10% last year")
+    return response.text("The space has grown 10% last year")
 
 
 if __name__ == "__main__":
