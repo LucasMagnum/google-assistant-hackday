@@ -1,3 +1,5 @@
+import os
+
 from sanic import Sanic
 from sanic.response import json
 
@@ -9,6 +11,6 @@ async def space(request):
     return "The space has grown 10% last year"
 
 
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    app.run(host="0.0.0.0", port=os.getenv('PORT', 8000)
+)
