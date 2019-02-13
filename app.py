@@ -54,7 +54,7 @@ def top_companies(parameters):
           "dividerAfter": True
         } for item in ebitda]
 
-    if operator.lower() == "revenue":
+    elif operator.lower() == "revenue":
         columns = [
             {
               "header": "Company"
@@ -75,6 +75,28 @@ def top_companies(parameters):
           ],
           "dividerAfter": True
         } for item in operating_revenue]
+
+    else:
+        columns = [
+            {
+              "header": "Category"
+            },
+            {
+              "header": "Average"
+            },
+        ]
+
+        rows = [{
+          "cells": [
+            {
+              "text": item["cat"]
+            },
+            {
+              "text": item["avg_revenue_2017"]
+            },
+          ],
+          "dividerAfter": True
+        } for item in average_revenue]
 
 
     return {
