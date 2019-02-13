@@ -3,7 +3,7 @@ import os
 
 from sanic import Sanic, response
 
-from data import ebitda, operating_revenue
+from data import ebitda, operating_revenue, average_revenue
 
 app = Sanic()
 
