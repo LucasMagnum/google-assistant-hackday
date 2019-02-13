@@ -77,6 +77,8 @@ def top_companies(parameters):
         } for item in operating_revenue]
 
     elif parameters["queryText"].lower() == "top growing":
+        text = "Here it is the top growing categories"
+
         columns = [
             {
               "header": "Category"
@@ -100,6 +102,8 @@ def top_companies(parameters):
 
 
     else:
+        text = "Here it is"
+
         columns = [
             {
               "header": "Category"
