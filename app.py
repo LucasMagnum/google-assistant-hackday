@@ -31,6 +31,7 @@ def top_companies(parameters):
 
     if operator.lower() == "earnings":
         return {
+            "fulfillmentText": "Top comanies - ebitda",
             "fulfillmentMessages": [{
                 "listSelect":  {
                     "title": "Top companies - EBTIDA",
@@ -44,6 +45,7 @@ def top_companies(parameters):
 
     if operator.lower() == "revenue":
         return {
+            "fulfillmentText": "Top companies - revenue",
             "fulfillmentMessages": [{
                 "listSelect":  {
                     "title": "Top companies - Operating Revenue",
