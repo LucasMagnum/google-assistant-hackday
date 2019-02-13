@@ -140,14 +140,7 @@ def top_companies(parameters):
               {
                 "tableCard": {
                   "rows": rows,
-                  "columnProperties": [
-                    {
-                      "header": "Company"
-                    },
-                    {
-                      "header": "EBITDA"
-                    },
-                  ]
+                  "columnProperties": columns
                 }
               }
             ]
