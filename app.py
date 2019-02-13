@@ -3,7 +3,7 @@ import os
 
 from sanic import Sanic, response
 
-from data import ebitda, operating_revenue, average_revenue
+from data import ebitda, operating_revenue, average_revenue, top_growing
 
 app = Sanic()
 
@@ -75,6 +75,29 @@ def top_companies(parameters):
           ],
           "dividerAfter": True
         } for item in operating_revenue]
+
+    elif parameters["queryText"].lower() == "top growing":
+        columns = [
+            {
+              "header": "Category"
+            },
+            {
+              "header": "Growth"
+            },
+        ]
+
+        rows = [{
+          "cells": [
+            {
+              "text": item["cat"]
+            },
+            {
+              "text": item["change"]
+            },
+          ],
+          "dividerAfter": True
+        } for item in top_growing]
+
 
     else:
         columns = [

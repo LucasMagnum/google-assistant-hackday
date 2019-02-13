@@ -107,62 +107,106 @@ operating_revenue = [
 average_revenue = [
   {
     "cat": "consumer_robotics",
-    "avg_revenue_2017": "1.25%",
-    "avg_revenue_2016": "4.07%",
+    "avg_revenue_2017": "1.2592837795E9",
+    "avg_revenue_2016": "4.070183588333334E8",
     "change": "2.093923780513433"
   },
   {
     "cat": "telemedicine",
-    "avg_revenue_2017": "1.04%",
-    "avg_revenue_2016": "4.00%",
+    "avg_revenue_2017": "1.0457636537142856E9",
+    "avg_revenue_2016": "4.001464058636364E8",
     "change": "1.6134525723334012"
   },
   {
     "cat": "consumer_health_tech",
-    "avg_revenue_2017": "8.67%",
-    "avg_revenue_2016": "5.25%",
+    "avg_revenue_2017": "8.674715881052631E8",
+    "avg_revenue_2016": "5.2508211738000005E8",
     "change": "0.6520684277607516"
   },
   {
     "cat": "electric_vehicles",
-    "avg_revenue_2017": "7.26%",
-    "avg_revenue_2016": "5.43%",
+    "avg_revenue_2017": "7.269724858E8",
+    "avg_revenue_2016": "5.433941467241378E8",
     "change": "0.3378364308533093"
   },
   {
     "cat": "virtual_reality",
-    "avg_revenue_2017": "7.14%",
-    "avg_revenue_2016": "1.01%",
+    "avg_revenue_2017": "7.1442254375E8",
+    "avg_revenue_2016": "1.0189251795E9",
     "change": "-0.29884690444044526"
   },
   {
     "cat": "5g_enablers",
-    "avg_revenue_2017": "7.12%",
-    "avg_revenue_2016": "4.49%",
+    "avg_revenue_2017": "7.124588168666667E8",
+    "avg_revenue_2016": "4.493122024838709E8",
     "change": "0.5856654079904318"
   },
   {
     "cat": "coupons_and_deals",
-    "avg_revenue_2017": "7.00%",
-    "avg_revenue_2016": "5.38%",
+    "avg_revenue_2017": "7.001460446000001E8",
+    "avg_revenue_2016": "5.382998166250001E8",
     "change": "0.3006618671909156"
   },
   {
     "cat": "gov_tech",
-    "avg_revenue_2017": "6.87%",
-    "avg_revenue_2016": "2.83%",
+    "avg_revenue_2017": "6.874084026486489E8",
+    "avg_revenue_2016": "2.831277371896552E8",
     "change": "1.427909075500375"
   },
   {
     "cat": "online_retail",
-    "avg_revenue_2017": "6.46%",
-    "avg_revenue_2016": "4.28%",
+    "avg_revenue_2017": "6.462296896052632E8",
+    "avg_revenue_2016": "4.28362634625E8",
     "change": "0.5086042464254377"
   },
   {
     "cat": "biopharma_contract_services",
-    "avg_revenue_2017": "6.07%",
-    "avg_revenue_2016": "2.78%",
+    "avg_revenue_2017": "6.071495399130436E8",
+    "avg_revenue_2016": "2.786485493313953E8",
     "change": "1.1789079518621994"
+  }
+]
+
+
+top_growing = [
+  {
+    "cat": "virtualization",
+    "change": "269%"
+  },
+  {
+    "cat": "wearable_technology",
+    "change": "263%"
+  },
+  {
+    "cat": "industrial_robotics",
+    "change": "258%"
+  },
+  {
+    "cat": "consumer_robotics",
+    "change": "209%"
+  },
+  {
+    "cat": "display_technologies",
+    "change": "194%"
+  },
+  {
+    "cat": "telemedicine",
+    "change": "161%"
+  },
+  {
+    "cat": "gov_tech",
+    "change": "142%"
+  },
+  {
+    "cat": "tutoring_and_self_learning",
+    "change": "139%"
+  },
+  {
+    "cat": "advanced_materials",
+    "change": "139%"
+  },
+  {
+    "cat": "bigdata_infrastructure",
+    "change": "129%"
   }
 ]
