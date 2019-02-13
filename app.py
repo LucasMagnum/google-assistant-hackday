@@ -30,6 +30,18 @@ def top_companies(parameters):
     operator = parameters["operator"]
 
     if operator.lower() == "earnings":
+        rows = [{
+          "cells": [
+            {
+              "text": item["name"]
+            },
+            {
+              "text": item["ebitda"]
+            },
+          ],
+          "dividerAfter": True
+        } for item in ebitda]
+
         return {
           "payload": {
             "google": {
@@ -38,51 +50,19 @@ def top_companies(parameters):
                 "items": [
                   {
                     "simpleResponse": {
-                      "textToSpeech": "Simple Response"
+                      "textToSpeech": "Here it is"
                     }
                   },
                   {
                     "tableCard": {
-                      "rows": [
-                        {
-                          "cells": [
-                            {
-                              "text": "row 1 item 1"
-                            },
-                            {
-                              "text": "row 1 item 2"
-                            },
-                            {
-                              "text": "row 1 item 3"
-                            }
-                          ],
-                          "dividerAfter": True
-                        },
-                        {
-                          "cells": [
-                            {
-                              "text": "row 2 item 1"
-                            },
-                            {
-                              "text": "row 2 item 2"
-                            },
-                            {
-                              "text": "row 2 item 3"
-                            }
-                          ],
-                          "dividerAfter": True
-                        }
-                      ],
+                      "rows": rows,
                       "columnProperties": [
                         {
-                          "header": "header 1"
+                          "header": "Company"
                         },
                         {
-                          "header": "header 2"
+                          "header": "EBITDA"
                         },
-                        {
-                          "header": "header 3"
-                        }
                       ]
                     }
                   }
@@ -92,6 +72,7 @@ def top_companies(parameters):
             }
           }
         }
+
 
     if operator.lower() == "revenue":
         return {
