@@ -31,17 +31,66 @@ def top_companies(parameters):
 
     if operator.lower() == "earnings":
         return {
-            "payload": {
-                "google": {
-                  "expectUserResponse": True,
-                  "richResponse": {
-                    "items": [
-                        {"simpleResponse": {"textToSpeech": "Test 1"}},
-                        {"simpleResponse": {"displayText": "Test 2"}},
-                    ]
+          "payload": {
+            "google": {
+              "expectUserResponse": True,
+              "richResponse": {
+                "items": [
+                  {
+                    "simpleResponse": {
+                      "textToSpeech": "Simple Response"
+                    }
                   },
-                }
+                  {
+                    "tableCard": {
+                      "rows": [
+                        {
+                          "cells": [
+                            {
+                              "text": "row 1 item 1"
+                            },
+                            {
+                              "text": "row 1 item 2"
+                            },
+                            {
+                              "text": "row 1 item 3"
+                            }
+                          ],
+                          "dividerAfter": True
+                        },
+                        {
+                          "cells": [
+                            {
+                              "text": "row 2 item 1"
+                            },
+                            {
+                              "text": "row 2 item 2"
+                            },
+                            {
+                              "text": "row 2 item 3"
+                            }
+                          ],
+                          "dividerAfter": True
+                        }
+                      ],
+                      "columnProperties": [
+                        {
+                          "header": "header 1"
+                        },
+                        {
+                          "header": "header 2"
+                        },
+                        {
+                          "header": "header 3"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "userStorage": "{\"data\":{}}"
             }
+          }
         }
 
     if operator.lower() == "revenue":
