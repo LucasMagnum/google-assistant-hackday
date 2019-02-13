@@ -29,7 +29,19 @@ async def handler(request):
 def top_companies(parameters):
     operator = parameters["operator"]
 
+    text = "Here it is the top companies in regards to %s" % operator
+    rows = []
+
     if operator.lower() == "earnings":
+        columns = [
+            {
+              "header": "Company"
+            },
+            {
+              "header": "EBITDA"
+            },
+        ]
+
         rows = [{
           "cells": [
             {
@@ -42,56 +54,58 @@ def top_companies(parameters):
           "dividerAfter": True
         } for item in ebitda]
 
-        return {
-          "payload": {
-            "google": {
-              "expectUserResponse": True,
-              "richResponse": {
-                "items": [
-                  {
-                    "simpleResponse": {
-                      "textToSpeech": "Here it is"
-                    }
-                  },
-                  {
-                    "tableCard": {
-                      "rows": rows,
-                      "columnProperties": [
-                        {
-                          "header": "Company"
-                        },
-                        {
-                          "header": "EBITDA"
-                        },
-                      ]
-                    }
-                  }
-                ]
-              },
-              "userStorage": "{\"data\":{}}"
-            }
-          }
-        }
-
-
     if operator.lower() == "revenue":
-        return {
-            "fulfillmentText": "Top companies - revenue",
-            "fulfillmentMessages": [{
-                "listSelect":  {
-                    "title": "Top companies - Operating Revenue",
-                    "items": [{
-                        "title": item["name"],
-                        "description": item["operating_revenue"]
-                    } for item in operating_revenue]
-                }
-            }],
-            "source": "Motherbrain"
-        }
+        columns = [
+            {
+              "header": "Company"
+            },
+            {
+              "header": "Revenue"
+            },
+        ]
+
+        rows = [{
+          "cells": [
+            {
+              "text": item["name"]
+            },
+            {
+              "text": item["operating_revenue"]
+            },
+          ],
+          "dividerAfter": True
+        } for item in operating_revenue]
 
 
     return {
-        "fulfillmentText": "Unable to find the financial operator"
+      "payload": {
+        "google": {
+          "expectUserResponse": True,
+          "richResponse": {
+            "items": [
+              {
+                "simpleResponse": {
+                  "textToSpeech": text
+                }
+              },
+              {
+                "tableCard": {
+                  "rows": rows,
+                  "columnProperties": [
+                    {
+                      "header": "Company"
+                    },
+                    {
+                      "header": "EBITDA"
+                    },
+                  ]
+                }
+              }
+            ]
+          },
+          "userStorage": "{\"data\":{}}"
+        }
+      }
     }
 
 

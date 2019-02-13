@@ -2,52 +2,52 @@ ebitda = [
   {
     "id": "continental-resources-inc-1",
     "name": "Continental Resources Inc",
-    "ebitda": "1973949672"
+    "ebitda": "1.9B"
   },
   {
     "id": "concho-resources",
     "name": "Concho Resources",
-    "ebitda": "1956141777"
+    "ebitda": "1.9B"
   },
   {
     "id": "ventas",
     "name": "Ventas",
-    "ebitda": "1659048367"
+    "ebitda": "1.6B"
   },
   {
     "id": "public-storage-inc",
     "name": "A Public Storage Of Fayetteville Inc",
-    "ebitda": "1565637178"
+    "ebitda": "1.5B"
   },
   {
     "id": "amc-networks",
     "name": "AMC Networks",
-    "ebitda": "1508711451"
+    "ebitda": "1.5B"
   },
   {
     "id": "aarons",
     "name": "Aarons",
-    "ebitda": "1504064572"
+    "ebitda": "1.5B"
   },
   {
     "id": "uk-power-networks-holdings-limited",
     "name": "Uk Power Networks Holdings Limited",
-    "ebitda": "1422642629"
+    "ebitda": "1.4B"
   },
   {
     "id": "hindustan-zinc-limited",
     "name": "Hindustan Zinc Limited",
-    "ebitda": "1420390501"
+    "ebitda": "1.4B"
   },
   {
     "id": "transdigm",
     "name": "TransDigm",
-    "ebitda": "1399247079"
+    "ebitda": "1.3B"
   },
   {
     "id": "prologis",
     "name": "Prologis",
-    "ebitda": "1375974807"
+    "ebitda": "1.3B"
   }
 ]
 
@@ -55,51 +55,51 @@ operating_revenue = [
   {
     "id": "intl-fcstone",
     "name": "INTL FCStone",
-    "operating_revenue": "24922583260"
+    "operating_revenue": "24B"
   },
   {
     "id": "greenergy-fuels-limited",
     "name": "GREENERGY FUELS HOLDINGS LIMITED",
-    "operating_revenue": "16766027416"
+    "operating_revenue": "16B"
   },
   {
     "id": "core-mark-international",
     "name": "Core-Mark International",
-    "operating_revenue": "13080635015"
+    "operating_revenue": "13B"
   },
   {
     "id": "veritiv",
     "name": "Veritiv",
-    "operating_revenue": "6974654358"
+    "operating_revenue": "6B"
   },
   {
     "id": "selfinvest-aps",
     "name": "Selfinvest Aps",
-    "operating_revenue": "6193276890"
+    "operating_revenue": "6B"
   },
   {
     "id": "ocp-repartition",
     "name": "OCP Répartition",
-    "operating_revenue": "5859660942"
+    "operating_revenue": "5B"
   },
   {
     "id": "datatec",
     "name": "Datatec",
-    "operating_revenue": "5635326342"
+    "operating_revenue": "5B"
   },
   {
     "id": "tecnicas-reunidas",
     "name": "Técnicas Reunidas",
-    "operating_revenue": "5067944000"
+    "operating_revenue": "5B"
   },
   {
     "id": "travelcenters-of-america-llc",
     "name": "Travelcenters Of America Llc",
-    "operating_revenue": "5045939423"
+    "operating_revenue": "5B"
   },
   {
     "id": "kier-group-plc",
     "name": "Kier Group Plc",
-    "operating_revenue": "4729330777"
+    "operating_revenue": "4.7B"
   }
 ]
