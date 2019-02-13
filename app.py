@@ -8,7 +8,7 @@ app = Sanic()
 logger = logging.getLogger(__name__)
 
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 async def space(request):
     return response.text("The space has grown 10% last year")
 
