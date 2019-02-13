@@ -40,7 +40,8 @@ def top_companies(parameters):
                         "description": item["ebitda"]
                     } for item in ebitda]
                 }
-            }]
+            }],
+            "source": "Motherbrain"
         }
 
     if operator.lower() == "revenue":
@@ -54,7 +55,8 @@ def top_companies(parameters):
                         "description": item["operating_revenue"]
                     } for item in operating_revenue]
                 }
-            }]
+            }],
+            "source": "Motherbrain"
         }
 
 
