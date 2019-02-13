@@ -10,7 +10,9 @@ logger = logging.getLogger(__name__)
 
 @app.route("/", methods=["POST", "GET"])
 async def space(request):
-    return response.text("The space has grown 10% last year")
+    return response.json({
+        "text": "The space has grown 10% last year"
+    })
 
 
 if __name__ == "__main__":
