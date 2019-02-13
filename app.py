@@ -33,37 +33,27 @@ def top_companies(parameters):
         return {
           "payload": {
             "google": {
-              "expectUserResponse": True,
+              "expectUserResponse": true,
               "richResponse": {
                 "items": [
                   {
-                    "carouselBrowse": {
-                      "items": [
+                    "basicCard": {
+                      "title": "Title: this is a title",
+                      "subtitle": "This is a subtitle",
+                      "formattedText": "This is a basic card.  Text in a basic card can include \"quotes\" and\n        most other unicode characters including emoji 📱.  Basic cards also support\n        some markdown formatting like *emphasis* or _italics_, **strong** or\n        __bold__, and ***bold itallic*** or ___strong emphasis___ as well as other\n        things like line  \nbreaks",
+                      "image": {
+                        "url": "https://example.com/image.png",
+                        "accessibilityText": "Image alternate text"
+                      },
+                      "buttons": [
                         {
-                          "title": "Title of item 1",
+                          "title": "This is a button",
                           "openUrlAction": {
-                            "url": "google.com"
-                          },
-                          "description": "Description of item 1",
-                          "footer": "Item 1 footer",
-                          "image": {
-                            "url": "IMG_URL.com",
-                            "accessibilityText": "Image alternate text"
-                          }
-                        },
-                        {
-                          "title": "Google Assistant",
-                          "openUrlAction": {
-                            "url": "google.com"
-                          },
-                          "description": "Google Assistant on Android and iOS",
-                          "footer": "More information about the Google Assistant",
-                          "image": {
-                            "url": "IMG_URL_Assistant.com",
-                            "accessibilityText": "Image alternate text"
+                            "url": "https://assistant.google.com/"
                           }
                         }
-                      ]
+                      ],
+                      "imageDisplayOptions": "CROPPED"
                     }
                   }
                 ]
