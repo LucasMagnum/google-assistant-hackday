@@ -12,6 +12,8 @@ logger = logging.getLogger(__name__)
 
 @app.route("/", methods=["POST", "GET"])
 async def handler(request):
+    print("Request received", request.json)
+
     action_type = request.json["queryResult"]["parameters"]["action_type"]
 
     handler = handlers.get(action_type)
