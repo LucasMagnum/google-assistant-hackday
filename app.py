@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 @app.route("/", methods=["POST", "GET"])
 async def space(request):
     return response.json({
-        "text": "The space has grown 10% last year"
+        "fulfillmentText": "The space has grown 10% last year"
     })
 
 
