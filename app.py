@@ -32,7 +32,10 @@ def top_companies(parameters):
     if operator.lower() == "earnings":
         return {
             "fulfillmentText": "Top comanies - ebitda",
-            "fulfillmentMessages": [{
+            "fulfillmentMessages": [{"card": {"title": item["name"], "subtitle": item["ebitda"]}} for item in ebitda
+
+            """
+            {
                 "listSelect":  {
                     "title": "Top companies - EBTIDA",
                     "items": [{
@@ -40,7 +43,9 @@ def top_companies(parameters):
                         "description": item["ebitda"]
                     } for item in ebitda]
                 }
-            }],
+            }
+            """
+            ],
             "source": "Motherbrain"
         }
 
